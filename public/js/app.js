@@ -1,4 +1,4 @@
-console.log('From client side javascript');
+
 const weatherForm = document.querySelector('form');
 const message1 = document.querySelector('#message-1');
 const message2 = document.querySelector('#message-2');
