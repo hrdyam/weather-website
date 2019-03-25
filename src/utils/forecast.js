@@ -11,7 +11,7 @@ const forecast = (long,lati,callback) =>{
             callback(undefined,{
                 forecast: response.body.currently.summary + '. It is currently ' +
                 response.body.currently.temperature + ' degrees out. There is a ' +
-                response.body.currently.precipProbability + '% chance of rain.',
+                response.body.currently.precipProbability + '% chance of rain. Thank you for using my Weather application!!'
             });
         };
     });
