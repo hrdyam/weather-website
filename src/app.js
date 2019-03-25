@@ -5,6 +5,8 @@ const hbs = require('hbs');
 const geocode = require('./utils/geocode.js');
 const forecast = require('./utils/forecast.js');
 
+const port = process.env.PORT || 3000;
+
 //set up handlebars engine and views location
 app.set('view engine', 'hbs');
 app.set('views','templates/views');
@@ -77,6 +79,6 @@ app.get('*',(req,res)=>{
     });
 })
 
-app.listen(3000,() =>{
-    console.log('listening to port 3000');
+app.listen(port,() =>{
+    console.log('listening to port' + port);
 });
